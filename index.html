@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Startup Dakshina Bharata - Igniting a Million Startups in a Decade. A SIAN initiative to catalyse South India's startup renaissance.">
+  <title>Startup Dakshina Bharata | Igniting a Million Startups</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 70px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .states-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .state-card {
+      grid-column: span 2;
+    }
+
+    .state-card:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+
+    .state-card:nth-child(5) {
+      grid-column: 4 / span 2;
+    }
+
+    @media (max-width: 1024px) {
+      .states-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .state-card,
+      .state-card:nth-child(4),
+      .state-card:nth-child(5) {
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .states-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/SDBA-logo.jpeg" alt="Startup Dakshina Bharata Logo" class="logo-img">
+    </a>
+
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="ecosystem.html">Ecosystem</a>
+      <a href="states.html">States</a>
+      <a href="who-can-join.html">Who Can Join</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="join.html" class="btn btn-primary">Join the Movement</a>
+    </div>
+
+    <button class="mobile-menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+  <a href="about.html">About SDB</a>
+  <a href="mission-champions.html">Mission Champions</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="programmes.html">Programmes</a>
+  <a href="ecosystem.html">Ecosystem & Partners</a>
+  <a href="states.html">States</a>
+  <a href="who-can-join.html">Who Can Join</a>
+  <a href="join.html">Join the Movement</a>
+  <a href="news.html">News</a>
+  <a href="gallery.html">Gallery</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Floating Shapes -->
+  <div class="hero-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-rocket"></i>
+          <span>A SIAN Initiative</span>
+        </div>
+        <h1>
+          <span class="word highlight-red">IGNITING</span>
+          <span class="word">A MILLION</span><br>
+          <span class="word highlight-blue">STARTUPS</span>
+          <span class="word">IN A</span><br>
+          <span class="word highlight-green">DECADE</span>
+        </h1>
+        <p class="hero-subtitle">
+          A Mission to connect ecosystems, entrepreneurs, investors, mentors, and policymakers across South India.
+        </p>
+        <div class="hero-cta">
+          <a href="join.html" class="btn btn-red btn-lg">
+            <i class="fas fa-paper-plane"></i>
+            Apply as Startup
+          </a>
+          <a href="join.html#partner" class="btn btn-outline btn-lg">
+            Partner With Us
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <div class="hero-image-main">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" alt="Startup collaboration">
+          </div>
+
+          <!-- Floating Stats -->
+          <div class="hero-stat-card card-1">
+            <div class="stat-number">5000+</div>
+            <div class="stat-label">Startups Discovered</div>
+          </div>
+
+          <div class="hero-stat-card card-2">
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Investors Onboarded</div>
+          </div>
+
+          <div class="hero-stat-card card-3">
+            <div class="stat-number">5</div>
+            <div class="stat-label">States United</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Metrics -->
+<section class="metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="metric-number" data-count="5000" data-suffix="+">5000+</div>
+        <div class="metric-label">Startups Discovered</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <div class="metric-number" data-count="150" data-suffix="+">150+</div>
+        <div class="metric-label">Active Incubators & Partners</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="metric-number" data-count="300" data-suffix="+">300+</div>
+        <div class="metric-label">Investors & Mentors</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <div class="metric-number" data-count="5" data-suffix="">5</div>
+        <div class="metric-label">States & Union Territories</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Overview -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <i class="fas fa-cogs"></i>
+        Our Approach
+      </div>
+      <h2>How We Catalyse Innovation</h2>
+      <p>A comprehensive framework to discover, nurture, and scale startups across South India through six interconnected pillars.</p>
+    </div>
+
+    <div class="how-it-works-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h4>Unified Digital Platform</h4>
+        <p>Discovery, networking, mentorship, funding, building, and learning - all in one place.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h4>Startup Summits & Discovery Drives</h4>
+        <p>Regional summits and grassroots discovery missions to identify promising ventures.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h4>Incubation & Acceleration</h4>
+        <p>Support for idea stage, early stage, and growth stage startups with tailored programs.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <h4>Capital & Advisory</h4>
+        <p>Access to Angels, VCs, Family Offices, and Government Funds for startup growth.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">5</div>
+        <h4>Policy Advocacy</h4>
+        <p>Working towards startup-friendly policies across all South Indian states.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">6</div>
+        <h4>Learning & Skill Hubs</h4>
+        <p>Bootcamps, workshops, and partner institutions for continuous learning.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="how-it-works.html" class="btn btn-primary">
+        Learn More
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Initiative Section -->
+<section class="initiative">
+  <div class="container">
+    <div class="initiative-content">
+      <div class="initiative-text">
+        <div class="section-label" style="color: rgba(255,255,255,0.6);">
+          <i class="fas fa-star"></i>
+          About The Initiative
+        </div>
+        <h2>An Initiative of South India Angel Network (SIAN)</h2>
+        <p>
+          Startup Dakshina Bharata is powered by SIAN's extensive network of investors, mentors,
+          and industry leaders committed to fostering entrepreneurship across South India.
+        </p>
+        <p>
+          Together, we are building a vibrant, interconnected startup ecosystem rooted in
+          regional strengths and global aspirations.
+        </p>
+        <a href="about.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white; margin-top: 1rem;">
+          About the Mission
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="initiative-image">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop&q=80" alt="Leadership meeting">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- States Preview -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <i class="fas fa-map"></i>
+        Regional Footprint
+      </div>
+      <h2>Powering Innovation Across South India</h2>
+      <p>Five states and union territories united in the mission to ignite a million startups.</p>
+    </div>
+
+    <div class="states-grid">
+      <div class="state-card">
+        <h3>Karnataka</h3>
+        <p class="state-tagline">"India's Deeptech & Startup Capital"</p>
+        <div class="state-sectors">
+          <span class="sector-tag">SaaS</span>
+          <span class="sector-tag">Deeptech</span>
+          <span class="sector-tag">AI</span>
+          <span class="sector-tag">Biotech</span>
+        </div>
+        <p class="state-cities"><strong>Key Cities:</strong> Bengaluru, Mysuru, Hubballi, Mangaluru</p>
+      </div>
+
+      <div class="state-card">
+        <h3>Tamil Nadu</h3>
+        <p class="state-tagline">"Manufacturing, Innovation & Scale"</p>
+        <div class="state-sectors">
+          <span class="sector-tag">Manufacturing</span>
+          <span class="sector-tag">EV & Mobility</span>
+          <span class="sector-tag">Hardware</span>
+        </div>
+        <p class="state-cities"><strong>Key Cities:</strong> Chennai, Coimbatore, Madurai, Trichy</p>
+      </div>
+
+      <div class="state-card">
+        <h3>Telangana</h3>
+        <p class="state-tagline">"Policy-led Innovation & Global Outlook"</p>
+        <div class="state-sectors">
+          <span class="sector-tag">AI & Data</span>
+          <span class="sector-tag">Agritech</span>
+          <span class="sector-tag">MedTech</span>
+        </div>
+        <p class="state-cities"><strong>Key Cities:</strong> Hyderabad, Warangal, Karimnagar</p>
+      </div>
+
+      <div class="state-card">
+        <h3>Andhra Pradesh</h3>
+        <p class="state-tagline">"Emerging Founders & Coastal Innovation"</p>
+        <div class="state-sectors">
+          <span class="sector-tag">Agritech</span>
+          <span class="sector-tag">Logistics</span>
+          <span class="sector-tag">FinTech</span>
+        </div>
+        <p class="state-cities"><strong>Key Cities:</strong> Visakhapatnam, Vijayawada, Tirupati</p>
+      </div>
+
+      <div class="state-card">
+        <h3>Kerala</h3>
+        <p class="state-tagline">"Knowledge Economy & Sustainable Innovation"</p>
+        <div class="state-sectors">
+          <span class="sector-tag">Deeptech</span>
+          <span class="sector-tag">HealthTech</span>
+          <span class="sector-tag">EdTech</span>
+        </div>
+        <p class="state-cities"><strong>Key Cities:</strong> Kochi, Trivandrum, Kozhikode</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="states.html" class="btn btn-primary">
+        Explore All States
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Be Part of South India's Startup Renaissance?</h2>
+      <p>Whether you're a founder, investor, mentor, or institution - there's a place for you in the Startup Dakshina Bharata Mission.</p>
+      <div class="hero-cta" style="justify-content: center;">
+        <a href="join.html" class="btn btn-red btn-lg">
+          <i class="fas fa-rocket"></i>
+          Apply as Startup
+        </a>
+        <a href="join.html#partner" class="btn btn-blue btn-lg">
+          <i class="fas fa-handshake"></i>
+          Partner With Us
+        </a>
+        <a href="join.html#mentor" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.3); color: white;">
+          Become a Mentor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Startup Dakshina Bharata</h3>
+        <p>Igniting a million startups in a decade. A SIAN initiative to catalyse South India's startup renaissance.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="about.html">About SDB</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="states.html">States</a>
+      </div>
+      <div class="footer-links">
+        <h4>Get Involved</h4>
+        <a href="who-can-join.html">Who Can Join</a>
+        <a href="join.html">Apply as Startup</a>
+        <a href="join.html#partner">Partner With Us</a>
+        <a href="join.html#mentor">Become a Mentor</a>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="subscribe.html">Subscribe</a>
+        <a href="mission-champions.html">Mission Champions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Startup Dakshina Bharata. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

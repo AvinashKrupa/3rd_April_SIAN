@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Movement - Apply as Startup, Partner With Us, or Become a Mentor at Startup Dakshina Bharata.">
+  <title>Join the Movement | Startup Dakshina Bharata</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <a href="index.html" class="logo">
+          <img src="images/SDBA-logo.jpeg" alt="Startup Dakshina Bharata Logo" class="logo-img">
+        </a>
+      </a>
+      
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="states.html">States</a>
+        <a href="who-can-join.html">Who Can Join</a>
+      </div>
+      
+      <div class="nav-cta">
+        <a href="join.html" class="btn btn-primary">Join the Movement</a>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <a href="about.html">About SDB</a>
+    <a href="mission-champions.html">Mission Champions</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="ecosystem.html">Ecosystem & Partners</a>
+    <a href="states.html">States</a>
+    <a href="who-can-join.html">Who Can Join</a>
+    <a href="join.html">Join the Movement</a>
+    <a href="news.html">News</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Join the Movement</h1>
+      <p>Be part of South India's largest startup ecosystem initiative. Choose how you want to contribute.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="form-section">
+        <!-- Form Tabs -->
+        <div class="form-tabs">
+          <button class="form-tab active" data-tab="startup-form">
+            <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>Apply as Startup
+          </button>
+          <button class="form-tab" data-tab="partner-form" id="partner">
+            <i class="fas fa-handshake" style="margin-right: 0.5rem;"></i>Partner With Us
+          </button>
+          <button class="form-tab" data-tab="mentor-form" id="mentor">
+            <i class="fas fa-user-tie" style="margin-right: 0.5rem;"></i>Mentor / Invest
+          </button>
+          <button class="form-tab" data-tab="investor-form" id="investor">
+            <i class="fas fa-coins" style="margin-right: 0.5rem;"></i>Join as Investor
+          </button>
+        </div>
+
+        <!-- Startup Form -->
+        <div class="form-panel active" id="startup-form">
+          <h2 style="margin-bottom: 0.5rem;">Apply as a Startup</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Join the Startup Dakshina Bharata ecosystem and accelerate your growth.</p>
+          
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="startup-name">Startup Name *</label>
+                <input type="text" id="startup-name" name="startup_name" required placeholder="Your startup name">
+              </div>
+              <div class="form-group">
+                <label for="founder-name">Founder Name *</label>
+                <input type="text" id="founder-name" name="founder_name" required placeholder="Your full name">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="startup-email">Email Address *</label>
+                <input type="email" id="startup-email" name="email" required placeholder="founder@startup.com">
+              </div>
+              <div class="form-group">
+                <label for="startup-phone">Phone Number *</label>
+                <input type="tel" id="startup-phone" name="phone" required placeholder="+91 98765 43210">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="startup-stage">Startup Stage *</label>
+                <select id="startup-stage" name="stage" required>
+                  <option value="">Select stage</option>
+                  <option value="idea">Idea Stage</option>
+                  <option value="mvp">MVP / Prototype</option>
+                  <option value="early">Early Stage (Revenue)</option>
+                  <option value="growth">Growth Stage</option>
+                  <option value="scale">Scale-up</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="startup-sector">Sector *</label>
+                <select id="startup-sector" name="sector" required>
+                  <option value="">Select sector</option>
+                  <option value="saas">SaaS & Enterprise Tech</option>
+                  <option value="deeptech">Deeptech & AI</option>
+                  <option value="healthtech">HealthTech</option>
+                  <option value="fintech">FinTech</option>
+                  <option value="edtech">EdTech</option>
+                  <option value="agritech">AgriTech</option>
+                  <option value="climatetech">Climate Tech</option>
+                  <option value="ecommerce">E-commerce & D2C</option>
+                  <option value="manufacturing">Manufacturing & Hardware</option>
+                  <option value="mobility">EV & Mobility</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="startup-state">State *</label>
+                <select id="startup-state" name="state" required>
+                  <option value="">Select state</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="tamilnadu">Tamil Nadu</option>
+                  <option value="telangana">Telangana</option>
+                  <option value="andhrapradesh">Andhra Pradesh</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="puducherry">Puducherry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="startup-city">City *</label>
+                <input type="text" id="startup-city" name="city" required placeholder="Your city">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="startup-website">Website / LinkedIn</label>
+              <input type="url" id="startup-website" name="website" placeholder="https://yourstartup.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="startup-description">Tell us about your startup *</label>
+              <textarea id="startup-description" name="description" required placeholder="Describe your product/service, problem you're solving, and what support you're looking for..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-red btn-lg" style="width: 100%;">Submit Application</button>
+          </form>
+        </div>
+
+        <!-- Partner Form -->
+        <div class="form-panel" id="partner-form">
+          <h2 style="margin-bottom: 0.5rem;">Partner With Us</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Join our ecosystem as an incubator, accelerator, corporate, or institutional partner.</p>
+          
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="partner-org">Organization Name *</label>
+                <input type="text" id="partner-org" name="org_name" required placeholder="Your organization">
+              </div>
+              <div class="form-group">
+                <label for="partner-contact">Contact Person *</label>
+                <input type="text" id="partner-contact" name="contact_name" required placeholder="Your full name">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="partner-email">Email Address *</label>
+                <input type="email" id="partner-email" name="email" required placeholder="contact@organization.com">
+              </div>
+              <div class="form-group">
+                <label for="partner-phone">Phone Number *</label>
+                <input type="tel" id="partner-phone" name="phone" required placeholder="+91 98765 43210">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="partner-type">Partner Type *</label>
+                <select id="partner-type" name="partner_type" required>
+                  <option value="">Select type</option>
+                  <option value="incubator">Incubator / Accelerator</option>
+                  <option value="corporate">Corporate / Industry</option>
+                  <option value="university">University / Academia</option>
+                  <option value="government">Government Body</option>
+                  <option value="coworking">Co-working Space</option>
+                  <option value="media">Media Partner</option>
+                  <option value="service">Service Provider</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="partner-state">State *</label>
+                <select id="partner-state" name="state" required>
+                  <option value="">Select state</option>
+                  <option value="karnataka">Karnataka</option>
+                  <option value="tamilnadu">Tamil Nadu</option>
+                  <option value="telangana">Telangana</option>
+                  <option value="andhrapradesh">Andhra Pradesh</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="puducherry">Puducherry</option>
+                  <option value="multiple">Multiple States</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="partner-website">Website</label>
+              <input type="url" id="partner-website" name="website" placeholder="https://yourorganization.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="partner-description">How would you like to partner? *</label>
+              <textarea id="partner-description" name="description" required placeholder="Describe your organization and how you'd like to contribute to the ecosystem..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-blue btn-lg" style="width: 100%;">Submit Partnership Request</button>
+          </form>
+        </div>
+
+        <!-- Mentor Form -->
+        <div class="form-panel" id="mentor-form">
+          <h2 style="margin-bottom: 0.5rem;">Become a Mentor</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Share your expertise and guide the next generation of founders.</p>
+          
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mentor-name">Full Name *</label>
+                <input type="text" id="mentor-name" name="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="mentor-designation">Current Role *</label>
+                <input type="text" id="mentor-designation" name="designation" required placeholder="CEO, Founder, CXO, etc.">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mentor-email">Email Address *</label>
+                <input type="email" id="mentor-email" name="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="mentor-phone">Phone Number *</label>
+                <input type="tel" id="mentor-phone" name="phone" required placeholder="+91 98765 43210">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mentor-org">Organization</label>
+                <input type="text" id="mentor-org" name="organization" placeholder="Current company/organization">
+              </div>
+              <div class="form-group">
+                <label for="mentor-linkedin">LinkedIn Profile *</label>
+                <input type="url" id="mentor-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourprofile">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="mentor-expertise">Areas of Expertise *</label>
+              <select id="mentor-expertise" name="expertise" required>
+                <option value="">Select primary expertise</option>
+                <option value="strategy">Business Strategy</option>
+                <option value="product">Product Development</option>
+                <option value="technology">Technology & Engineering</option>
+                <option value="sales">Sales & Marketing</option>
+                <option value="fundraising">Fundraising & Finance</option>
+                <option value="operations">Operations & Scaling</option>
+                <option value="hr">HR & Team Building</option>
+                <option value="legal">Legal & Compliance</option>
+                <option value="industry">Industry Domain Expert</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="mentor-bio">Brief Bio *</label>
+              <textarea id="mentor-bio" name="bio" required placeholder="Share your background, experience, and why you want to mentor startups..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Apply as Mentor</button>
+          </form>
+        </div>
+
+        <!-- Investor Form -->
+        <div class="form-panel" id="investor-form">
+          <h2 style="margin-bottom: 0.5rem;">Join as Investor</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Access curated deal flow from South India's most promising startups.</p>
+          
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="investor-name">Full Name *</label>
+                <input type="text" id="investor-name" name="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="investor-type">Investor Type *</label>
+                <select id="investor-type" name="investor_type" required>
+                  <option value="">Select type</option>
+                  <option value="angel">Angel Investor</option>
+                  <option value="vc">Venture Capital</option>
+                  <option value="family">Family Office</option>
+                  <option value="corporate">Corporate VC</option>
+                  <option value="government">Government Fund</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="investor-email">Email Address *</label>
+                <input type="email" id="investor-email" name="email" required placeholder="investor@email.com">
+              </div>
+              <div class="form-group">
+                <label for="investor-phone">Phone Number *</label>
+                <input type="tel" id="investor-phone" name="phone" required placeholder="+91 98765 43210">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="investor-firm">Fund / Firm Name</label>
+                <input type="text" id="investor-firm" name="firm" placeholder="Your fund or firm name">
+              </div>
+              <div class="form-group">
+                <label for="investor-linkedin">LinkedIn Profile *</label>
+                <input type="url" id="investor-linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourprofile">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="investor-stage">Preferred Stage *</label>
+                <select id="investor-stage" name="stage" required>
+                  <option value="">Select stage</option>
+                  <option value="preseed">Pre-Seed</option>
+                  <option value="seed">Seed</option>
+                  <option value="seriesa">Series A</option>
+                  <option value="seriesb">Series B+</option>
+                  <option value="multiple">Multiple Stages</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="investor-sectors">Focus Sectors</label>
+                <input type="text" id="investor-sectors" name="sectors" placeholder="e.g., SaaS, HealthTech, FinTech">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="investor-interest">Investment Interest *</label>
+              <textarea id="investor-interest" name="interest" required placeholder="Tell us about your investment thesis, ticket size, and what you're looking for in startups..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-green btn-lg" style="width: 100%; color: var(--color-black);">Join as Investor</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header text-center" style="max-width: 100%;">
+        <h2>Questions?</h2>
+        <p>Reach out to us for any queries about joining the Startup Dakshina Bharata ecosystem.</p>
+        <div style="margin-top: 2rem;">
+          <p style="font-size: 1.1rem;">
+            <i class="fas fa-envelope" style="color: var(--color-blue); margin-right: 0.5rem;"></i>
+            <a href="mailto:privacy@startupdakshinabharata.com" style="color: var(--color-blue); font-weight: 600;">privacy@startupdakshinabharata.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Startup Dakshina Bharata</h3>
+          <p>Igniting a million startups in a decade. A SIAN initiative to catalyse South India's startup renaissance.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="about.html">About SDB</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="ecosystem.html">Ecosystem</a>
+          <a href="states.html">States</a>
+        </div>
+        <div class="footer-links">
+          <h4>Get Involved</h4>
+          <a href="who-can-join.html">Who Can Join</a>
+          <a href="join.html">Apply as Startup</a>
+          <a href="join.html#partner">Partner With Us</a>
+          <a href="join.html#mentor">Become a Mentor</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="news.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="subscribe.html">Subscribe</a>
+          <a href="mission-champions.html">Mission Champions</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Startup Dakshina Bharata. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Handle URL hash for direct tab linking
+    document.addEventListener('DOMContentLoaded', function() {
+      const hash = window.location.hash;
+      if (hash) {
+        const tabId = hash.replace('#', '') + '-form';
+        const targetTab = document.querySelector(`[data-tab="${tabId}"]`);
+        if (targetTab) {
+          // Remove active from all
+          document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
+          // Activate target
+          targetTab.classList.add('active');
+          document.getElementById(tabId).classList.add('active');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
